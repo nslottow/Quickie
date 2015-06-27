@@ -130,10 +130,15 @@ local function endFrame()
 	-- future use?
 end
 
+local function getCurrent()
+	return current
+end
+
 return setmetatable({
 	push       = push,
 	pop        = pop,
 	getRect    = getRect,
+	getCurrent = getCurrent,
 	advance    = advance,
 	beginFrame = beginFrame,
 	endFrame   = endFrame,
